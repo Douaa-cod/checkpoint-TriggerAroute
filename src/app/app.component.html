@@ -1,0 +1,36 @@
+<div class="container">
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand">Navbar</a>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a  class="nav-item nav-link active"
+              [routerLink] = "['CVs']"
+              routerLinkActive ='active'
+          >
+            List of CVs
+          </a>
+          <a  class="nav-item nav-link"
+              [routerLink] = "['Todo']"
+              routerLinkActive ='active'
+          >
+            List of Todo
+          </a>
+          <a  class="nav-item nav-link"
+              [routerLink] = "['Mini-words']"
+          >
+            Mini Words color change
+          </a>
+
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="alert alert-success text-center">
+    <h3>checkpoint Activate Actual Route</h3>
+  </div>
+  <app-router-simulator></app-router-simulator>
+  <div class="col-md-12">
+    <router-outlet></router-outlet>
+  </div>
+</div>
